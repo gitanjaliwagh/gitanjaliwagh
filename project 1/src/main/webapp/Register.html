@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="Register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Registration Page</title>
+  
+
+</head>
+<body>
+
+  <div class="regform">
+      
+     <form class="form" name="myform" id="form" method="post" action="RegisterServlet" onsubmit="return validateform()">
+     <h3>Registration Form</h3>
+     
+    
+       <input type="text" class="input" id="fName" name="name" placeholder="Full Name">
+     
+  
+       <input type="number" class="input" id="phone" name="phone" placeholder="Phone Number">
+       
+       
+       
+       
+       <input type="number" class="input" id="age" name="age" placeholder="Age" required>
+       
+       
+       
+       <input type="text" class="input" id="email" name="email" placeholder="Email Address" >
+      
+       <i class=''></i>
+       <input type="text" class="input" id="username" name="username" placeholder="username" required >
+       
+       
+       <input type="password" class="input" id="password" name="password" placeholder="Password" required>
+       
+       
+       
+       <button type="submit" class="btn">Register</button>
+       
+       <h5>Already registered?<a href="Login.html">Login</a></h5>
+     </form>
+
+  </div>  
+</body>
+
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var phone=document.myform.phone.value;
+var age=document.myform.age.value;
+var email=document.myform.email.value;
+var username=document.myform.username.value; 
+var password=document.myform.password.value;  
+  
+if (name==""){  
+  alert("Name can't be blank");  
+  return false;
+}
+else if (phone.length<10){  
+	  alert("phone number should be 10 digits");  
+	  return false;  
+}
+else if (age<18){  
+	  alert("You are not eligible");  
+	 
+	  return false;
+}
+else if (email==""){  
+	  alert("Enter valid email");  
+	  
+	  return false;
+}
+else if(username==""){
+	alert("Username can't be blank");
+	
+	  return false;
+}
+if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+ }  
+ 
+} 
+</script> 
+
+</html>

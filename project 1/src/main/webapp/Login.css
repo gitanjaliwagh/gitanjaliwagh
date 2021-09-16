@@ -1,0 +1,147 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url('https://images.wallpaperscraft.com/image/gradient_multicolored_color_153151_1920x1200.jpg');
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+
+
+.form {
+   padding: 35px 0px 35px 55px;
+  margin-top: 10rem;
+  margin-left: 28rem;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 35vw;
+  box-shadow: 0 8px hsl(249, 10%, 26%, 0.25);
+  position: relative;
+}
+
+h5{
+	margin:5px;
+}
+
+
+
+.form h3{
+	text-align:center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.input {
+  margin: 0;
+  width: 80%;
+  margin: 20px;
+  margin-bottom: 0;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgba(103, 128, 159, 0.3);
+  padding-left: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.input:focus {
+  border: 1px solid var(--blue);
+}
+
+/* .btn {
+  margin-top: 10px;
+  width: 85%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--green);
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-color: hsl(154, 59%, 51%, 0.50);
+  border-right: none;
+  border-width: 3px;
+  transition: background-color 200ms ease;
+}
+
+.btn:hover {
+  background-color: hsl(154, 59%, 51%, 0.8);
+  cursor: pointer;
+} */
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 85%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+/* ERROR STYLES */
+
+.hidden {
+  visibility: hidden;
+}
+
+/* .icon {
+  position: absolute;
+  right: 55px;
+  margin-top: 23px;
+} */
+
+
+.warning {
+  text-align: right;
+  padding-right: 40px;
+  margin-top: 0;
+  font-style: italic;
+  color: var(--red);
+  font-size: 0.6rem;
+}
+
+.input.error {
+  border: 2px solid var(--red);
+}

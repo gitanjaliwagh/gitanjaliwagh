@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+#welcome{
+  margin: 0;
+  padding: 0;
+  background-image:url('https://tintindas.tech/intro-component-with-signup-form/images/bg-intro-desktop.png');
+  background-color:var(--red);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+.left{
+	
+	width: 50vw;
+  color: white;
+ padding: 10vh 10vw;
+  padding-right: 0;
+   font-size: 3rem;
+  line-height: 3.3rem;
+    animation-name:moveInleft;
+    animation-duration: 5s;
+}
+.left h1{
+	margin-left:10rem;
+  
+}
+.left p{
+	font-size: 2rem;
+  line-height: 3.3rem;
+  margin-left:15rem;
+}
+.button_cont{
+	margin:25rem 0 10rem 5rem;
+	animation-name:moveInright;
+    animation-duration: 5s;
+}
+.example_b {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: hsl(154, 59%, 51%);
+	padding: 10px 15px 10px 15px;
+	border-radius: 25px 0px 25px 0px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+.example_b:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+@keyframes moveInleft {
+    0%{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes moveInright {
+    0%{
+        opacity:0;
+        transform:translateX(100px);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}

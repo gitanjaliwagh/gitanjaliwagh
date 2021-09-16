@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+
+.bg{
+	background-image:url('https://images.wallpaperscraft.com/image/gradient_multicolored_color_153151_1920x1200.jpg');
+	
+}
+
+.viewdetails{
+	padding: 35px 0px 35px 55px;
+  margin-top: 5rem;
+  margin-left: 28rem;
+  background-image:url('');
+  background-color: white;
+  border-radius: 10px;
+  max-width: 35vw;
+  box-shadow: 0 8px hsl(249, 10%, 26%, 0.25);
+  position: relative;
+}
+
+
+.btn-edit{
+	margin-top: 10px;
+  width: 85%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-color: hsl(154, 59%, 51%, 0.50);
+  border-right: none;
+  border-width: 3px;
+  transition: background-color 200ms ease;
+}
+.data{
+	margin:4rem;
+}
+p{
+	padding:5px;
+}
+b{
+	padding-right:5px;
+	display:inline;
+}
+.btn{
+	text-decoration:none;
+	color:white;
+}
+.back{
+	text-decoration:none;
+	color:black;
+}
+.form {
+   padding: 35px 0px 35px 55px;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 35vw;
+  box-shadow: 0 8px hsl(249, 10%, 26%, 0.25);
+  position: relative;
+}
+input {
+  margin: 0;
+  width: 80%;
+  margin:10px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgba(103, 128, 159, 0.3);
+  padding-left: 20px;
+}
+
+input:focus {
+  border: 1px solid var(--blue);
+}
+.view{
+	text-decoration:none;
+	color:black;
+	margin:2rem;
+}
+
+.delete{
+	background-color:black;
+}
+
+.btn-delete{
+	margin-top: 10px;
+  width: 85%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-color: hsl(0, 100%, 74%);
+  border-right: none;
+  border-width: 3px;
+  transition: background-color 200ms ease;
+}
