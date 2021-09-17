@@ -1,14 +1,15 @@
 Project Description:
          
-         This is web application named "Employee Reimbursement System" where employee can Login,Logout,View the employee home page. View pending reimbursement requests,View resolved reimbursement requests. 
+         This is web application named "Employee Management System" where admin can Login,Logout,View,edit,delete the employee information. 
          
+
 Technologies Used:
 
          HTML,CSS, Hibernate, Java,MYSQL DB and Eclipse.
       
 Features:
 
-         Store employee information in database .login,logout,view all request.
+         Store employee information in database .login,create,edit,delete employee information.
          
 Getting Started:
 
@@ -17,4 +18,4 @@ Getting Started:
          
 Usage:
 
-         Open Eclipes and run the java code in which display the profiles login ,logout ,edit,view information.
+         Open Eclipes and run the java code in which display the profiles login ,logout ,edit,view,delete employee information.
